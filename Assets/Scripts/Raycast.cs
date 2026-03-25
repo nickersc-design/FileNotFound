@@ -44,7 +44,14 @@ public class Raycast : MonoBehaviour
         {
             if (Input.GetKeyDown(interactKey))
             {
-                _noteController.ShowNote();
+                if (_noteController.isLocked)
+                {
+                    _noteController.ShowPuzzle();
+                }
+                else
+                {
+                    _noteController.ShowNote();
+                }
             }
         }
     }

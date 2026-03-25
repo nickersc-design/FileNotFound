@@ -9,6 +9,8 @@ public class Controller : MonoBehaviour
     [SerializeField] private Camera playerCamera;
     [SerializeField] private float lookSpeed = 2.0f;
     [SerializeField] private float lookXLimit = 45.0f;
+    [SerializeField] private float reach = 3f;
+    [SerializeField] private KeyCode interact;
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -51,6 +53,23 @@ public class Controller : MonoBehaviour
             rotationX = Mathf.Clamp(rotationX, -lookXLimit, lookXLimit);
             playerCamera.transform.localRotation = Quaternion.Euler(rotationX, 0, 0);
             transform.rotation *= Quaternion.Euler(0, Input.GetAxis("Mouse X") * lookSpeed, 0);
+        }
+
+        if (Input.GetKeyDown(interact))
+        {
+            RaycastHit hit;
+            Ray ray = playerCamera.ScreenPointToRay(Input.mousePosition);
+
+            if (Physics.Raycast(ray, out hit, reach))
+            {
+                if (hit.transform.tag == "Cab")
+                {
+                    if (!hit.transform.GetComponent<CabinetManager>().locked)
+                    {
+                        hit.transform.GetComponent<CabinetManager>().open = !hit.transform.GetComponent<CabinetManager>().open;
+                    }
+                }
+            }
         }
     }
 }

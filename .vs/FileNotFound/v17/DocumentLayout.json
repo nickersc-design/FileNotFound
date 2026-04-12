@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\nicke\\UnityProjects\\FileNotFound\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B4C2603-4B09-8AFD-81F8-06713B38A109}|Assembly-CSharp.csproj|c:\\users\\nicke\\unityprojects\\filenotfound\\assets\\scripts\\raycast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B4C2603-4B09-8AFD-81F8-06713B38A109}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\raycast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3B4C2603-4B09-8AFD-81F8-06713B38A109}|Assembly-CSharp.csproj|C:\\Users\\nicke\\UnityProjects\\FileNotFound\\assets\\scripts\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B4C2603-4B09-8AFD-81F8-06713B38A109}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B4C2603-4B09-8AFD-81F8-06713B38A109}|Assembly-CSharp.csproj|C:\\Users\\nicke\\UnityProjects\\FileNotFound\\assets\\scripts\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3B4C2603-4B09-8AFD-81F8-06713B38A109}|Assembly-CSharp.csproj|c:\\users\\nicke\\unityprojects\\filenotfound\\assets\\scripts\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B4C2603-4B09-8AFD-81F8-06713B38A109}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B4C2603-4B09-8AFD-81F8-06713B38A109}|Assembly-CSharp.csproj|C:\\Users\\nicke\\UnityProjects\\FileNotFound\\assets\\scripts\\raycast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B4C2603-4B09-8AFD-81F8-06713B38A109}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\raycast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\Users\\nicke\\UnityProjects\\FileNotFound\\Assets\\Scripts\\GameController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameController.cs",
+              "ToolTip": "C:\\Users\\nicke\\UnityProjects\\FileNotFound\\Assets\\Scripts\\GameController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-12T17:14:32.236Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -28,23 +45,22 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\NoteController.cs",
               "ToolTip": "C:\\Users\\nicke\\UnityProjects\\FileNotFound\\Assets\\Scripts\\NoteController.cs",
               "RelativeToolTip": "Assets\\Scripts\\NoteController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAwCUAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-10T15:48:49.593Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Raycast.cs",
               "DocumentMoniker": "C:\\Users\\nicke\\UnityProjects\\FileNotFound\\Assets\\Scripts\\Raycast.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Raycast.cs",
-              "ToolTip": "C:\\Users\\nicke\\UnityProjects\\FileNotFound\\Assets\\Scripts\\Raycast.cs*",
-              "RelativeToolTip": "Assets\\Scripts\\Raycast.cs*",
+              "ToolTip": "C:\\Users\\nicke\\UnityProjects\\FileNotFound\\Assets\\Scripts\\Raycast.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Raycast.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwCEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T15:24:25.785Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T15:24:25.785Z"
             }
           ]
         }

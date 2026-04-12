@@ -22,6 +22,8 @@ public class NoteController : MonoBehaviour
     [SerializeField] private string noteText;
     [SerializeField] private string puzzleText;
 
+    [SerializeField] private string puzzleAnswer;
+
     [Space(10)]
     [SerializeField] private UnityEvent openEvent;
     private bool isOpen = false;
@@ -65,7 +67,7 @@ public class NoteController : MonoBehaviour
 
     private void Update()
     {
-        if (gameController.simplePuzzle(gameController.passInput.text) && isLocked)
+        if (gameController.simplePuzzle(gameController.passInput.text, puzzleAnswer) && isLocked)
         {
             isLocked = false;
             DisableNote();

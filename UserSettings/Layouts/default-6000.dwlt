@@ -69,8 +69,8 @@ MonoBehaviour:
     y: 0
     width: 393.59998
     height: 716.8
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 76}
+  m_MaxSize: {x: 4001, y: 4026}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 43.2
+    y: 0
     width: 1536
     height: 36
   m_SerializedDataModeController:
@@ -673,7 +673,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 570.4
+    y: 515.2
     width: 1141.4
     height: 199.59998
   m_SerializedDataModeController:
@@ -724,8 +724,7 @@ MonoBehaviour:
       m_Data: 47764
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 47636
-    - m_Data: 1000000000
+    - m_Data: 47730
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -758,7 +757,7 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 47636
+    - m_Data: 47730
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -840,8 +839,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1142.4
-    y: 79.200005
+    x: 1143.4
+    y: 24
     width: 392.59998
     height: 690.8
   m_SerializedDataModeController:
@@ -892,7 +891,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 79.200005
+    y: 24
     width: 266.2
     height: 465.2
   m_SerializedDataModeController:
@@ -911,10 +910,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 419.8}
-      m_SelectedIDs:
-      - m_Data: -57874
+      m_SelectedIDs: []
       m_LastClickedID:
-        m_Data: -57874
+        m_Data: 0
       m_ExpandedIDs:
       - m_Data: -37842
       - m_Data: -1296
@@ -967,8 +965,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Scene\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 267.2
-    y: 79.200005
+    x: 268.2
+    y: 24
     width: 873.2
     height: 465.2
   m_SerializedDataModeController:
@@ -1521,7 +1519,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.22005242, y: -0.060808986, z: 0.013760167, w: 0.9735344}
     speed: 2
-    m_Value: {x: 0.22004369, y: -0.060806572, z: 0.013759621, w: 0.9734958}
+    m_Value: {x: -0.22005244, y: 0.06080899, z: -0.013760167, w: -0.9735344}
   m_Size:
     m_Target: 2.1786797
     speed: 2

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class Controller : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class Controller : MonoBehaviour
     [SerializeField] private float lookXLimit = 45.0f;
     [SerializeField] private float reach = 3f;
     [SerializeField] private KeyCode interact;
+    [SerializeField] private KeyCode drop;
+    [SerializeField] private Transform hand;
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -18,6 +21,8 @@ public class Controller : MonoBehaviour
 
     [HideInInspector]
     public bool canMove = true;
+
+    private bool holding;
 
     void Start()
     {
@@ -68,6 +73,33 @@ public class Controller : MonoBehaviour
                     {
                         hit.transform.GetComponent<CabinetManager>().open = !hit.transform.GetComponent<CabinetManager>().open;
                     }
+                }
+                else if (hit.transform.tag == "Item" && !holding)
+                {
+                    hit.transform.GetComponent<Item>().held = true;
+                    holding = true;
+                    
+                    if (hit.transform.GetComponent<NavMeshAgent>() != null)
+                    {
+                        hit.transform.GetComponent<NavMeshAgent>().enabled = false;
+                    }
+                    hit.transform.position = hand.position;
+                    hit.transform.rotation = hand.rotation;
+                    hit.transform.parent = hand;
+                }
+            }
+        }
+        if (Input.GetKeyDown(drop))
+        {
+            if (holding)
+            {
+                Transform item = hand.GetChild(0);
+                item.parent = null;
+                item.GetComponent<Item>().held = false;
+                holding = false;
+                if (item.GetComponent<NavMeshAgent>() != null)
+                {
+                    item.GetComponent<NavMeshAgent>().enabled = true;
                 }
             }
         }
